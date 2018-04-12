@@ -11,6 +11,7 @@ public class UIMain : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         GameVO.Instance.score.AddListener(lib.Event.CHANGE, OnScoreChange);
+        GameVO.Instance.combo.AddListener(lib.Event.CHANGE, OnScoreChange);
         OnScoreChange();
     }
 
